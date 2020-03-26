@@ -5,6 +5,10 @@ const routes = express.Router();
 const OngController = require("./controllers/OngController");
 const IncidentController = require("./controllers/IncidentController");
 const ProfileController = require("./controllers/ProfileController");
+const SessionController = require("./controllers/SessionController");
+
+// Sessions
+routes.post("/sessions", SessionController.create);
 
 // Ongs endpoints
 routes.get("/ongs", OngController.index);
