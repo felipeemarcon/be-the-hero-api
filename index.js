@@ -5,4 +5,6 @@ app.get("/", (req, res) => {
   return res.send("Hello world");
 });
 
-app.listen(3333);
+app.listen(3333, () => {
+  console.log("Server is running on port 3333");
+});
